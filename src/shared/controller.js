@@ -26,7 +26,9 @@ export default class Controller{
    this.#view.notify({msg: "Please fill out all the fields!!"})
    return
   }
+  
    this.#view.addRow({ name, age, email })
+   this.#view.resetForm();
  }
 
  #init(){
